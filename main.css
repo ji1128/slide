@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #222328;
+    font-family: "맑은 고딕";
+}
+body {
+    background-color: #fff;
+    min-width: 1000px;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+
+/* 슬라이드 */
+/* slide : fade in/out */
+#slide{
+    width: 1200px;
+    height: 400px;
+
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    /* fade in/out------ */
+    /* width: 1200px; */
+
+    /* 슬라이드 오->왼 */
+    width: 4800px;
+
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+ul li{
+    width: 1200px;
+    height: 400px;
+
+    /* fade in/out------ */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+    /* 슬라이드 오->왼 */
+    float: left;
+}
+
+ul li:first-child{
+    background-color: crimson;
+}
+ul li:nth-child(2){
+    background-color: yellow;
+}
+ul li:last-child{
+    background-color: yellowgreen;
+}
